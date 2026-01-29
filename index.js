@@ -10,6 +10,6 @@ app.get('/health', (req, res) => {
   res.json({ status: 'ok', timestamp: new Date().toISOString() });
 });
 
-app.listen(port, () => {
-  console.log(`Test app listening at http://localhost:${port}`);
+app.listen(port, '0.0.0.0', () => {
+  console.log(`Test app listening at http://0.0.0.0:${port}`);
 });
